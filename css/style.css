@@ -1,0 +1,357 @@
+@import url('https://fonts.googleapis.com/css2?family=Moderustic:wght@300..800&display=swap');
+@font-face {
+  font-family: 'Rocher';
+  src: url(https://assets.codepen.io/9632/RocherColorGX.woff2);}
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body{
+  background-color: #ffffff;
+  max-width: 100%;
+  font-family:"Moderustic", sans-serif;
+  
+}
+.mainPage {
+  position: relative;
+  min-height: 100vh;
+  background: url("../image/karimjy-loulou_front.jpg") no-repeat;
+  background-size: cover;
+  background-position: center;
+}
+
+header {
+  position: relative;
+  top: 0;
+  left: 0;
+  width: 100%;
+  padding: 20px 70px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  z-index: 99;
+}
+
+.logo {
+  font-size: 2em;
+  color: #fff;
+  user-select: none;
+}
+
+.navigation a {
+  position: relative;
+  font-size: 1.1em;
+  color: #fff;
+  text-decoration: none;
+  font-weight: 500;
+  margin-left: 20px;
+}
+
+.navigation a::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom: -6px;
+  width: 100%;
+  height: 3px;
+  background: #fff;
+  border-radius: 5px;
+  transform-origin: right;
+  transform: scaleX(0);
+  transition: 0.5s;
+}
+
+.navigation a:hover::after {
+  transform-origin: left;
+  transform: scale(1);
+}
+
+.navigation .btnLogin-popup {
+  width: 100px;
+  height: 50px;
+  background: #ccc;
+  border: none;
+  outline: none;
+  border-radius: 20px;
+  cursor: pointer;
+  font-size: 1.1em;
+  color: white;
+  margin-left: 70px;
+  margin-right: 50px;
+  font-weight: 500;
+  transition: 0.5s;
+}
+
+.navigation .btnLogin-popup:hover {
+  color: white;
+}
+
+.navigation .btnSignUp-popup {
+  width: 130px;
+  height: 50px;
+  background: transparent;
+  border: 2px solid #ccc;
+  outline: none;
+  border-radius: 20px;
+  cursor: pointer;
+  font-size: 1.1em;
+  color: white;
+  font-weight: 500;
+  transition: 0.5s;
+}
+
+.navigation .btnSignUp-popup:hover {
+  color: white;
+}
+
+.opening section {
+  margin-left: 60px;
+  margin-top: 100px;
+}
+
+.opening section .First {
+  font-size: 3rem;
+  color: #fff;
+  text-decoration: none;
+}
+
+.opening section .Second {
+  color: #fff;
+  font-size: 1.5rem;
+  margin-left: 0 50px;
+}
+
+.opening section .btn_shortcut .btnSignUp-popup {
+  width: 130px;
+  height: 50px;
+  background: #ccc;
+  border: none;
+  outline: none;
+  border-radius: 20px;
+  cursor: pointer;
+  font-size: 1.1em;
+  color: white;
+  margin-top: 20px;
+  margin-right: 20px;
+  font-weight: 500;
+  transition: 0.5s;
+}
+
+.opening section .btn_shortcut .btnDiscover-popup {
+  width: 130px;
+  height: 50px;
+  background: transparent;
+  border: 2px solid #ccc;
+  outline: none;
+  border-radius: 20px;
+  cursor: pointer;
+  font-size: 1.1em;
+  color: white;
+  margin-top: 20px;
+  font-weight: 500;
+  transition: 0.5s;
+}
+.two{
+  margin-top: 0;
+}
+
+.one{
+  position: relative;
+  font-size: 6vw;
+  color: #d4d4d4;
+  -webkit-text-stroke: 0.1vw #3c2f2f;
+  text-transform: lowercase;
+}
+
+/* main1 */
+
+.main1{
+  display: flex;
+  max-width: 100%;
+  max-height: 100vh;
+  margin: 5% 10%;
+  justify-content: center;
+  align-items: center;
+  gap: 5%;
+}
+h1{
+  font-size: 2em;
+}
+.section1-main1{
+  text-align: justify;
+  hyphens: auto;
+}
+.section1-main1 p{
+   font-size: 1.5em;
+   font-weight: 200;
+}
+.section2-main2 img{
+  max-width: 783px;
+  max-height: 448px;
+}
+
+/*main2 */
+
+.text-main2{
+  text-align: justify;
+  hyphens: auto;
+}
+.text-main2 p{
+  font-size: 1.5em;
+  font-weight: 200;
+}
+.main2{
+  display: flex;
+  max-width: 100%;
+  max-height: 100vh;
+  margin: 5% 10%;
+  justify-content: center;
+  align-items: center;
+  gap: 5%;
+}
+.image-main2 img{
+  max-width: 783px;
+  max-height: 448px;
+}
+
+/* SLIDER TEXT*/
+.slider-text{
+  min-height: 2em;
+  width: 100%;
+  text-align: center;
+}
+.slider-text p{
+   padding: 10px 20px;
+   background: linear-gradient(#e66465, #9198e5);
+   font-size: 3em;
+   font-family: 'Rocher';
+}
+
+  /*faune et flore*/
+  .body2 {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: rgb(64, 90, 54);
+  }
+  
+  .slider-wrapper {
+    overflow: hidden;
+    margin: 0 77px 55px;
+  }
+  
+  .card-list .card-item {
+    color: grey;
+    user-select: none;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    border-radius: 8px;
+    backdrop-filter: blur(30px);
+    background: rgba(255, 255, 255, 0.2);
+    border: 1px solid rgba(255, 255, 255, 0.5);
+    height: 350px;
+    /*width: 200px;*/
+  }
+  
+  .user-image {
+    width: 100%;
+    height: 45%;
+    object-fit: cover;
+    object-position: center;
+    border-radius: 8px 8px 0 0;
+    box-shadow: 0 10px 15px rgba(0, 0, 0, 0.3);
+    overflow: hidden;
+    position: absolute;
+    top: 0;
+    left: 0;
+  }
+  
+  .user-name {
+    padding-top: 15px;
+    color: rgb(52, 82, 63);
+    margin-top: 9rem;
+  }
+  
+  .card-list .card-item .user-profession {
+    font-size: 14px;
+    color: #e3e3e3;
+    font-weight: 500;
+    margin: 14px 0;
+    padding: 0 25px;
+    padding-bottom: 5px;    
+  }
+  
+  .slider-wrapper .swiper-pagination-bullet {
+    background: #fff;
+    height: 15px;
+    width: 15px;
+  }
+  
+  .slider-wrapper .swiper-slide-button {
+    color: #fff;
+    margin-top: -50px;
+    transition: 0.2s ease;
+  }
+  
+  .slider-wrapper .swiper-slide-button:hover {
+    color: rgb(121, 36, 36);
+    text-shadow: 0 0 5px rgb(7, 7, 7);
+  }
+  
+  /*texte*/
+
+  hr{ 
+    margin-top: 2rem;
+    color: #ffffff;
+  }
+  .texte{
+    padding: 5em;
+    color: #fff;
+    text-align: justify;
+  }
+
+  h3{
+    font-size: 18px;
+    text-align: center;
+    padding-top: 80px;
+    padding-bottom: -54px;
+    margin-bottom: 2rem;
+}
+
+h4{
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    color: rgb(58, 125, 103);
+    font-size: 18px;
+    margin-left: 6rem;
+}
+
+
+
+.absolute{
+    position: fixed;
+}
+
+.circle1{
+    height: 40px;
+    width: 40px;
+    border-radius: 150px;
+    top: 90%;
+    right: -3rem;
+    position: fixed;
+    font-size: 16px;
+    margin-right: 50px;
+    color: rgba(255, 255, 255, 0.855);
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.circle1 img{
+    width: 100%;
+    height: 100%;
+}
+.circle1:hover{
+    box-shadow: 0 0 5px rgb(43, 129, 49);
+}
